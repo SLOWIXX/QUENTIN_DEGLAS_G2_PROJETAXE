@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/connxion.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+
+  <body>
+    <div id="intro" class="intro">
+      <h1>Bienvenue</h1>
+    </div>
+    <script src="js/toggleLoginForm.js"></script>
+    <header>
+      <div class="video-background">
+        <img
+          src="img/noir"
+          alt="Vidéo de fond"
+          class="background-video"
+        />
+      </div>
+    </header>
+    <div class="positionLogin">
+      <div class="login">
+        <div class="toggleForm">
+          <button class="boutonRegister">S'inscrire</button>
+          <button class="boutonLogin">Se connecter</button>
+        </div>
+        <form id="registerForm">
+          <div class="formInput">
+            <label for="usernameRegister">Username</label>
+            <input id="usernameRegister" type="text" />
+            <div id="usernameMessage"></div>
+          </div>
+          <div class="formInput">
+            <label for="mailRegister">E-mail</label>
+            <input id="mailRegister" type="text" />
+            <div id="emailMessage"></div>
+          </div>
+          <div class="formInput password-container">
+            <label for="passwordRegister">Password</label>
+            <input id="passwordRegister" type="password" />
+            <button type="button" id="togglePassword">
+              <i class="fa fa-eye"></i>
+            </button>
+            <div id="passwordMessage"></div>
+          </div>
+          <button id="submitRegisterForm" class="submitFormButton">Submit</button>
+        </form>
+        
+        
+        
+        
+
+        <form id="loginForm">
+          <div class="formInput">
+            <label>E-mail</label>
+            <input id="mailLogin" type="text" />
+            <div id="emailMessageLogin"></div> 
+          </div>
+          <div class="formInput">
+            <label> Password</label>
+            <input id="passwordLogin" type="password" />
+            <button type="button" id="togglePassword">
+              <i class="fa fa-eye"></i>
+            </button>
+            <div id="passwordMessageLogin"></div> 
+          </div>
+          <button id="submitLoginForm" class="submitFormButton">Se connecter</button>
+          <a href="#">Mot de passe oublié ?</a>
+        </form>
+        
+      </div>
+    </div>
+
+    <script src="js/connexion.js"></script>
+  </body>
+</html>

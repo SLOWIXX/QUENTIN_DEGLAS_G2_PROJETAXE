@@ -1,15 +1,55 @@
- .login {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+#intro {
+    position: fixed; /* Reste fixe par rapport à la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Prendre toute la largeur de la fenêtre */
+    height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Assurez-vous que l'intro est au-dessus des autres éléments */
+    color: white;
+    font-family: 'Poppins', sans-serif; /* Utiliser la police Poppins */
+    font-size: 7rem; /* Augmenter la taille de la police */
+    font-weight: 10000; /* Mettre le texte en gras */
+    letter-spacing: 30px; /* Espacement des lettres pour plus d'impact */
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Empêche le défilement */
+  }
+
+
+  #intro h1 {
+    text-align: center;
+    opacity: 1;
+  }
+
+  
+
+ 
+  .login {
+    display: none; /* Cache le formulaire dès le début */
     border: 1px solid black;
     width: 400px;
     height: 500px;
     background: url('zzz');
     color: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
     background-size: cover;
     background-position: center;
     overflow: hidden;
-}
+  }
+
+
 
 form {
     display: block;
@@ -27,7 +67,6 @@ form {
 label {
     color: rgba(255,255,255,0.8);
     text-transform: uppercase;
-    font-size: 10px;
     letter-spacing: 2px;
     padding-left: 10px;
 }
@@ -39,11 +78,12 @@ input {
     border-radius: 20px;
     padding: 0px 20px;
     border: none;
-    margin-bottom: 20px;
+    margin-bottom: 0.5rem;
     color: white;
+     font-size: 14px;
 }
 
-button {
+ #registerForm button {
     background: rgb(45,136,231);
     height: 40px;
     line-height: 40px;
@@ -56,7 +96,7 @@ button {
 
 
 
-.placement-login {
+.positionLogin {
     display: flex;
     justify-content: center;
     margin-top: 12rem;
@@ -72,3 +112,216 @@ button {
     object-fit: cover;
     z-index: -1;
   }
+
+
+
+  #registerForm {
+    display: block;
+  }
+  
+  #loginForm {
+    display: none;
+   
+  }
+
+  
+
+  .toggleForm {
+    backdrop-filter: brightness(40%);
+    display: flex;
+    justify-content: center;
+}
+  
+
+  .toggleForm button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 50%;
+  }
+
+  .toggleForm button.active {
+    background-color: #3475a0; 
+    color: rgb(0, 0, 0);
+    border-color: #2587a5;
+    
+  }
+
+  .toggleForm button:hover {
+    background-color: #1b5780;
+
+  }
+
+  form {
+    display: none; 
+    flex-direction: column;
+  }
+
+
+  form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  form button:hover {
+    background-color: #3c6bb1;
+  }
+
+  #registerForm {
+    display: block;
+  }
+
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    margin-bottom: 15px; 
+}
+
+
+/* Styles généraux pour les boutons de formulaire */
+.submitFormButton {
+    width: 100%;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: white; 
+    background: rgb(45, 136, 231);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.submitFormButton:hover {
+    background-color: #3c6bb1;
+}
+
+/* Styles spécifiques aux boutons dans les formulaires */
+#submitRegisterForm, #submitLoginForm {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgb(45, 136, 231);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin: 10px 0;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect pour les boutons de connexion et d'inscription */
+#submitRegisterForm:hover, #submitLoginForm:hover {
+    background-color: #3c6bb1;
+}
+
+
+
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+  font-size: 12px;
+}
+
+#usernameMessage, #emailMessage, #passwordMessage {
+  margin-top: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.password-container {
+  position: relative;
+}
+
+#passwordRegister {
+  width: calc(100% - 40px); /* Laisser de l'espace pour l'icône d'œil */
+  padding-right: 40px; /* Ajouter un padding pour que le texte ne touche pas l'icône */
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Espace à droite */
+  transform: translateY(-50%); /* Centrer verticalement l'icône */
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+
+
+#togglePassword:hover {
+  color: #3475a0; /* Changer la couleur lors du survol */
+}
+
+#togglePassword:focus {
+  outline: none; /* Supprimer le contour bleu lors du focus */
+}
+
+/* Suppression de la couleur dans #passwordMessage pour laisser la classe .valid ou .invalid gérer la couleur */
+#passwordMessage {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+  font-size: 12px;
+}
+
+#usernameMessage, #emailMessage, #passwordMessage,
+#emailMessageLogin, #passwordMessageLogin {
+  margin-top: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#passwordMessage, #passwordMessageLogin {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#mailLogin, #passwordLogin {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.submitFormButton {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #3475a0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.submitFormButton:hover {
+  background-color: #285a73;
+}

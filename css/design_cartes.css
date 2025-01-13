@@ -337,3 +337,104 @@ hr {
 .placement-utilisateur {
   margin-right: 2rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Favoris */
+.alignement-favoris {
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px solid #f4d03f; /* Jaune, couleur qui rappelle Gryffondor */
+  border-radius: 10px;
+  background-color: #fef5e7; /* Couleur douce pour différencier */
+}
+
+.alignement-favoris h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7d3c98; /* Couleur violet foncé pour un joli contraste */
+  margin-bottom: 10px;
+}
+
+.favoris-cartes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.favoris-cartes .cartes {
+  width: 200px; /* Taille des cartes */
+  border: 2px solid #7d3c98; /* Bordure violette */
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff; /* Fond blanc */
+}
+
+.favoris-cartes .cartes img {
+  width: 100%;
+  height: auto;
+}
+
+.favoris-cartes .contenu-cartes {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Boutons Favoris */
+.favoris-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #f4d03f;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.favoris-button:hover {
+  background-color: #e67e22;
+}
+
+/* Section Cartes */
+.alignement-cartes {
+  margin: 20px auto;
+}
+
+.alignement-cartes3 {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cartes {
+  width: 200px;
+  border: 2px solid #d5d8dc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.cartes img {
+  width: 100%;
+  height: auto;
+}
+
+.contenu-cartes {
+  padding: 10px;
+  text-align: center;
+}
