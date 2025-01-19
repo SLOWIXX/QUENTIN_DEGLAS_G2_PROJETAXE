@@ -3,729 +3,85 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/design_cartes.css"/>
-  
+    <title>Cartes Gryffondor</title>
+    <link rel="stylesheet" href="css/design_cartes.css" />
+    <script src="./js/obligationConnexion.js"></script>
   </head>
 
   <body>
-
     <header>
       <nav class="navigation">
+        <div id="left-nav">
+          <img id="nav-logo" href="page1.html" alt="#" src="img/logo.webp" />
+          <div class="liens">
+            <ul>
+              <li><a href="#"><h3 class="couleur_texte_entete">Mes Cartes</h3></a></li>
+              <li><a href="#"><h3 class="couleur_texte_entete">Echanges</h3></a></li>
+              <li><a href="page2.html"><h3 class="couleur_texte_entete">Booster</h3></a></li>
+              <li><a href="#"><h3 class="couleur_texte_entete">Mon Compte</h3></a></li>
+            </ul>
           </div>
-          <div id="left-nav">
-                  <img id="nav-logo" href="page1.html" alt="#" src="img/logo.webp">
-                  <div class="liens">
-              <ul>
-                  <li>
-                      <a href="#">
-                          <div class="placement-mes-cartes">
-                              <h3 class="couleur_texte_entete">Mes Cartes</h3>
-                          </div>
-                  </li>
-                  <li>
-                      <div class="placement-echanges">
-                          <a href="#">
-                              <h3 class="couleur_texte_entete">Echanges</h3>
-                          </a>
-                      </div>
-                    </li>
-                  <li>
-                      <div class="placement-booster">
-                          <a href="page2.html">
-                              <h3 class="couleur_texte_entete">Booster</h3>
-                          </a>
-                      </div>
-                  </li>
-                  <li>
-                      <div class="placement-jsp2">
-                          <a href="#">
-                              <h3 class="couleur_texte_entete">Mon Compte</h3>
-                          </a>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-          </div>
+        </div>
       </nav>
-      <div class="barre">
-          <hr />
-      </div>
-      </header>
-
-    <div class="titre">
-      <center><h1><strong>GRYFONDOR</strong></h1></center>
-    </div>
-    <div class="alignement-cartes">
-      <div class="alignement-cartes4">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="barre"><hr /></div>
+    </header>
+    <body>
+      <center><h2 class="text">CARTES DISPONIBLES</h2></center>
+      <div>
+        <label for="maison-select">Maison</label>
+        <select id="maison-select">
+          <option value="">--Choisir une maison--</option>
+          <option value="gryffondor">Gryffondor</option>
+          <option value="serpentard">Serpentard</option>
+          <option value="poufsouffle">Poufsouffle</option>
+          <option value="serdaigle">Serdaigle</option>
+          <option value="professeurs">Professeurs</option>
+          <option value="mangemort">Mangemort</option>
+          <option value="alliés">Alliés</option>
+        </select>
+        <script src="js/selectioncartes.js"></script>
       </div>
 
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes2">
-      <div class="alignement-cartes4">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <div class="alignement-cartes" id="cartes-container"></div>
+    
 
 
-    <div class="titre">
-      <center><h1><strong>SERPENTAR</strong></h1></center>
-    </div>
-    <div class="alignement-cartes">
-      <div class="alignement-cartes4">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes2">
-      <div class="alignement-cartes4">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="alignement-cartes3">
-        <div class="cartes">
-          <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-          <div class="contenu-cartes">
-            <h2 class="nom">Harry Potter</h2>
-            <ul class="info">
-              <li>Maison : Gryffondor</li>
-              <li>Patronus : Cerf</li>
-              <li>Statut : Sorcier</li>
-            </ul>
-            <div class="favoris">
-              <button class="favoris-button" title="Ajouter aux favoris">
-                ❤️
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="titre">
-    <center><h1><strong>POUFSOUFFLE</strong></h1></center>
-  </div>
-  <div class="alignement-cartes">
-    <div class="alignement-cartes4">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="alignement-cartes2">
-    <div class="alignement-cartes4">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="alignement-cartes3">
-      <div class="cartes">
-        <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-        <div class="contenu-cartes">
-          <h2 class="nom">Harry Potter</h2>
-          <ul class="info">
-            <li>Maison : Gryffondor</li>
-            <li>Patronus : Cerf</li>
-            <li>Statut : Sorcier</li>
-          </ul>
-          <div class="favoris">
-            <button class="favoris-button" title="Ajouter aux favoris">
-              ❤️
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="titre">
-  <center><h1><strong>SERDAIGLE</strong></h1></center>
-</div>
-<div class="alignement-cartes">
-  <div class="alignement-cartes4">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="alignement-cartes2">
-  <div class="alignement-cartes4">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="alignement-cartes3">
-    <div class="cartes">
-      <img src="img/FOND.avif" alt="Nom du personnage" class="image" />
-      <div class="contenu-cartes">
-        <h2 class="nom">Harry Potter</h2>
-        <ul class="info">
-          <li>Maison : Gryffondor</li>
-          <li>Patronus : Cerf</li>
-          <li>Statut : Sorcier</li>
-        </ul>
-        <div class="favoris">
-          <button class="favoris-button" title="Ajouter aux favoris">
-            ❤️
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-  <div class="margin-barre">
-      <hr />
-  </div>
 
-  <div class="texte-trait">
-      <div class="flex_texte_trait">
+    <footer>
+      <div class="margin-barre"><hr /></div>
+      <div class="texte-trait">
+        <div class="flex_texte_trait">
           <h3 class="couleur-texte-trait">
-              <p>TROUVEZ VOTRE BMW &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Tous les modèles</a></p>
+            <p>aaa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">aaa</a></p>
           </h3>
+        </div>
       </div>
-  </div>
-
-
-
-
       <div class="ecart-bottom">
-          <h4>
-              <div class="flexbox-reseaux">
-                  <p>Suivez-nous</p>
-                  <a href="https://www.facebook.com/quentin.deglas"><img src="img/facebook.png" alt="Notre Facebook"
-                          img id="img-reseaux" /></a>
-                  <a href="https://www.instagram.com/quentin__dgls/"><img src="img/instagram.png"
-                          alt="Notre Instagram" img id="img-reseaux" /></a>
-                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/youtube.png" alt="Notre Youtube"
-                          img id="img-reseaux" /></a>
-                  <a href="https://www.linkedin.com/in/quentin-deglas-81699832b/"><img src="img/linkedin.png"
-                          alt="Notre LinkedIn" img id="img-reseaux" /></a>
-
-              </div>
-
-          </h4>
-      </div>
-  </footer>
-
-
-  <div class="sous-footer">
-      <div class="ecart-texte-sous-footer">
-
-          <h2>
-              <p>© BMW France 2024</p>
-          </h2>
-      </div>
-      <div class="ecart-lien-sous-footer">
-          <div class="texte-retour-haut">
-              <a href="#" class="btn btn-default">
-                  <h2>
-                      Retour en haut ↑
-                  </h2>
-              </a>
+        <h4>
+          <div class="flexbox-reseaux">
+            <p>Suivez-nous</p>
+            <a href="https://www.facebook.com/quentin.deglas"><img src="img/facebook.png" alt="Notre Facebook" id="img-reseaux" /></a>
+            <a href="https://www.instagram.com/quentin__dgls/"><img src="img/instagram.png" alt="Notre Instagram" id="img-reseaux" /></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/youtube.png" alt="Notre Youtube" id="img-reseaux" /></a>
+            <a href="https://www.linkedin.com/in/quentin-deglas-81699832b/"><img src="img/linkedin.png" alt="Notre LinkedIn" id="img-reseaux" /></a>
           </div>
+        </h4>
       </div>
+      <div class="sous-footer">
+        <div class="ecart-texte-sous-footer">
+          <h2><p>qdxzjhd</p></h2>
+        </div>
+        <div class="ecart-lien-sous-footer">
+          <div class="texte-retour-haut">
+            <a href="#" class="btn btn-default"><h2>Retour en haut ↑</h2></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  </div>
-
+    <script src="js/cartesgd.js"></script>
   </body>
 </html>
