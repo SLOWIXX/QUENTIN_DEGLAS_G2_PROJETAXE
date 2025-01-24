@@ -9,8 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -20,19 +22,18 @@
     <script src="js/toggleLoginForm.js"></script>
     <header>
       <div class="video-background">
-        <img
-          src="img/noir"
-          alt="Vidéo de fond"
-          class="background-video"
-        />
+        <img src="img/noir" alt="Vidéo de fond" class="background-video" />
       </div>
     </header>
     <div class="positionLogin">
       <div class="login">
         <div class="toggleForm">
-          <button class="boutonRegister">S'inscrire</button>
-          <button class="boutonLogin">Se connecter</button>
+          <button class="boutonRegister" id="showRegisterForm">
+            S'inscrire
+          </button>
+          <button class="boutonLogin" id="showLoginForm">Se connecter</button>
         </div>
+        <!-- register form -->
         <form id="registerForm">
           <div class="formInput">
             <label for="usernameRegister">Username</label>
@@ -47,39 +48,47 @@
           <div class="formInput password-container">
             <label for="passwordRegister">Password</label>
             <input id="passwordRegister" type="password" />
-            <button type="button" id="togglePassword">
+            <button
+              type="button"
+              id="togglePasswordRegister"
+              onclick="togglePasswordVisibility('passwordRegister', 'togglePasswordRegister')"
+            >
               <i class="fa fa-eye"></i>
             </button>
+
             <div id="passwordMessage"></div>
           </div>
-          <button id="submitRegisterForm" class="submitFormButton">Submit</button>
+          <button type="submit" id="submitRegisterForm">Register</button>
         </form>
-        
-        
-        
-        
 
-        <form id="loginForm">
+        <!-- login form -->
+        <form id="loginForm" style="display: none">
           <div class="formInput">
-            <label>E-mail</label>
+            <label for="mailLogin">E-mail</label>
             <input id="mailLogin" type="text" />
-            <div id="emailMessageLogin"></div> 
+            <div id="emailMessageLogin"></div>
           </div>
-          <div class="formInput">
-            <label> Password</label>
+          <div class="formInput password-container">
+            <label for="passwordLogin">Password</label>
             <input id="passwordLogin" type="password" />
-            <button type="button" id="togglePassword">
+            <button
+              type="button"
+              id="togglePasswordLogin"
+              onclick="togglePasswordVisibility('passwordLogin', 'togglePasswordLogin')"
+            >
               <i class="fa fa-eye"></i>
             </button>
-            <div id="passwordMessageLogin"></div> 
+            <div id="passwordMessageLogin"></div>
           </div>
-          <button id="submitLoginForm" class="submitFormButton">Se connecter</button>
-          <a href="#">Mot de passe oublié ?</a>
+          <button type="submit" id="submitLoginForm">Login</button>
         </form>
-        
       </div>
     </div>
 
     <script src="js/connexion.js"></script>
+    <script src="js/obligationConnexion.js"></script>
+    <script>
+      checkLogin();
+    </script>
   </body>
 </html>

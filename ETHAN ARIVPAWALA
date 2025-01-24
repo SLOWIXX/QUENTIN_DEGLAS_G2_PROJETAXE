@@ -1,0 +1,6 @@
+COUCOU MON POTE
+en gros ma page d'acceuil ou y'a les cartes en dynamique c'est design_cartes. 
+La j'ai mis les 8 premieres cartes bien alignés etc, mais je voudrais mettre les 8 suivantes. Le probleme c'est que je veux ajouter du texte entre les 2 ( a savoir le nom de la maison)
+le design final que je veux c'est dans design_cartes_test (dans cet html la c'est pas dynamique ct juste pour voir la gueule du truc). 
+
+Donc en gros j'arrive pas a caler du texte entre les cartes... 
