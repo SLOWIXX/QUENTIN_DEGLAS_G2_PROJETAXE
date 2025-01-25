@@ -307,8 +307,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Mangemort",
     image: "img/perso/24.png",
-    description:
-      "Loup-garou brutal, connu pour attaquer les enfants.",
+    description: "Loup-garou brutal, connu pour attaquer les enfants.",
   },
   {
     id: 25,
@@ -386,8 +385,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Alliés",
     image: "img/perso/32.png",
-    description:
-      "Championne de Beauxbâtons et épouse de Bill Weasley.",
+    description: "Championne de Beauxbâtons et épouse de Bill Weasley.",
   },
   {
     id: 33,
@@ -396,8 +394,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Alliés",
     image: "img/perso/33.png",
-    description:
-      "Frère d'Albus, propriétaire de la Tête de Sanglier.",
+    description: "Frère d'Albus, propriétaire de la Tête de Sanglier.",
   },
   {
     id: 34,
@@ -406,8 +403,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Alliés",
     image: "img/perso/34.png",
-    description:
-      "Auror et membre influent de l'Ordre du Phénix.",
+    description: "Auror et membre influent de l'Ordre du Phénix.",
   },
   {
     id: 35,
@@ -439,13 +435,10 @@ const cartesData = [
     description:
       "Le patriarche de la famille Weasley, fasciné par les objets moldus.",
   },
-]
+];
 
-// Conteneur des cartes
 const cartesContainer = document.getElementById("cartes-container");
 
-
-// Fonction pour gérer les maisons et afficher leurs cartes
 function fetchData(data) {
   if (data.length < 1 || data == null || data == undefined) {
     console.log("Aucune donnée trouvée");
@@ -469,19 +462,16 @@ function showHouse(maison, maisonData) {
   let maisonDiv = document.createElement("div");
   maisonDiv.classList.add("maison");
 
-// Créer le titre centré pour la maison
-maisonDiv.innerHTML = `<h2 id="${maison.toLowerCase()}" class="titre-maison">${maison}</h2>`;
+  maisonDiv.innerHTML = `<h2 id="${maison.toLowerCase()}" class="titre-maison">${maison}</h2>`;
 
-// Créer un conteneur pour les cartes de chaque maison
-const maisonCartesContainer = document.createElement("div");
-maisonCartesContainer.classList.add("cartes-container");
+  const maisonCartesContainer = document.createElement("div");
+  maisonCartesContainer.classList.add("cartes-container");
 
-// Ajouter les cartes de la maison
-maisonData.forEach((carte) => {
-  const carteElement = document.createElement("div");
-  carteElement.classList.add("cartes");
-  const imageSrc = carte.image ? carte.image : "./img/FOND.avif";
-  carteElement.innerHTML = `
+  maisonData.forEach((carte) => {
+    const carteElement = document.createElement("div");
+    carteElement.classList.add("cartes");
+    const imageSrc = carte.image ? carte.image : "./img/FOND.avif";
+    carteElement.innerHTML = `
       <img src="${imageSrc}" alt="Carte de ${carte.nom}" class="image" />
       <div class="contenu-cartes">
         <h2 class="nom">${carte.nom}</h2>
@@ -495,19 +485,56 @@ maisonData.forEach((carte) => {
         </div>
       </div>
     `;
-  maisonCartesContainer.appendChild(carteElement);
-});
+    maisonCartesContainer.appendChild(carteElement);
+  });
 
-// Ajouter un id pour le conteneur de la maison
-maisonDiv.id = maison.toLowerCase();
+  maisonDiv.id = maison.toLowerCase();
 
-// Ajouter le conteneur des cartes à la maison
-maisonDiv.appendChild(maisonCartesContainer);
+  maisonDiv.appendChild(maisonCartesContainer);
 
-
-  // Ajouter la div de la maison à la page
   cartesContainer.appendChild(maisonDiv);
 }
 
-// Exemple d'appel de la fonction fetchData avec des données fictives
 fetchData(cartesData);
+
+document.querySelectorAll(".titre-maison").forEach((titre) => {
+  titre.addEventListener("click", () => {
+    const maisonSelectionnee = titre.textContent.trim();
+
+    document.querySelectorAll(".titre-maison").forEach((autreTitre) => {
+      if (autreTitre.textContent.trim() !== maisonSelectionnee) {
+        autreTitre.style.display = "none";
+      }
+    });
+
+    document.querySelectorAll(".cartes-container").forEach((container) => {
+      if (
+        container.previousElementSibling.textContent.trim() ===
+        maisonSelectionnee
+      ) {
+        container.querySelectorAll(".cartes").forEach((carte) => {
+          carte.style.display = "block";
+        });
+      } else {
+        container.querySelectorAll(".cartes").forEach((carte) => {
+          carte.style.display = "none";
+        });
+      }
+    });
+  });
+});
+
+const resetButton = document.getElementById("resetButton");
+const maisonTitles = document.querySelectorAll(".titre-maison");
+
+maisonTitles.forEach((titre) => {
+  titre.addEventListener("click", function () {
+    const isMaisonIsolated = titre.style.display === "none";
+
+    if (!isMaisonIsolated) {
+      resetButton.style.display = "block";
+    } else {
+      resetButton.style.display = "none";
+    }
+  });
+});
