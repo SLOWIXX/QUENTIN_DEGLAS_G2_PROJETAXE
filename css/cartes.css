@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #585151;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .details-container {
+    flex: 2;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #carte-nom {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }

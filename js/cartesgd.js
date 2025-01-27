@@ -470,6 +470,7 @@ function showHouse(maison, maisonData) {
   maisonData.forEach((carte) => {
     const carteElement = document.createElement("div");
     carteElement.classList.add("cartes");
+
     const imageSrc = carte.image ? carte.image : "./img/FOND.avif";
     carteElement.innerHTML = `
       <img src="${imageSrc}" alt="Carte de ${carte.nom}" class="image" />
@@ -485,6 +486,13 @@ function showHouse(maison, maisonData) {
         </div>
       </div>
     `;
+
+    carteElement.addEventListener("click", () => {
+      const carteData = JSON.stringify(carte);
+      localStorage.setItem("selectedCarte", carteData);
+      window.location.href = "cartes.html";
+    });
+
     maisonCartesContainer.appendChild(carteElement);
   });
 
@@ -494,6 +502,7 @@ function showHouse(maison, maisonData) {
 
   cartesContainer.appendChild(maisonDiv);
 }
+
 
 fetchData(cartesData);
 
@@ -538,3 +547,13 @@ maisonTitles.forEach((titre) => {
     }
   });
 });
+
+
+
+
+// carteElement.addEventListener("click", () => {
+//   localStorage.setItem("carteSelectionnee", JSON.stringify(carte));
+//   window.location.href = "cartes.html";
+// });
+
+
