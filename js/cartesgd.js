@@ -471,6 +471,7 @@ function showHouse(maison, maisonData) {
     const carteElement = document.createElement("div");
     carteElement.classList.add("cartes");
 
+
     const imageSrc = carte.image ? carte.image : "./img/FOND.avif";
     carteElement.innerHTML = `
       <img src="${imageSrc}" alt="Carte de ${carte.nom}" class="image" />
@@ -502,7 +503,6 @@ function showHouse(maison, maisonData) {
 
   cartesContainer.appendChild(maisonDiv);
 }
-
 
 fetchData(cartesData);
 
@@ -557,3 +557,54 @@ maisonTitles.forEach((titre) => {
 // });
 
 
+
+// barre de recherche 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('searchInput');
+  const searchButton = document.getElementById('searchButton');
+  const resetButton = document.getElementById('placement-reset-button');
+  const cartesContainer = document.getElementById('cartes-container');
+
+  searchButton.addEventListener('click', function() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const cartes = cartesContainer.getElementsByClassName('cartes');
+      const maisons = cartesContainer.getElementsByClassName('maison');
+
+      Array.from(cartes).forEach(function(carte) {
+          const carteNom = carte.querySelector('.nom').textContent.toLowerCase();
+          if (carteNom.includes(searchTerm)) {
+              carte.style.display = 'block';
+          } else {
+              carte.style.display = 'none';
+          }
+      });
+
+      Array.from(maisons).forEach(function(maison) {
+          const cartesMaison = maison.getElementsByClassName('cartes');
+          const hasVisibleCarte = Array.from(cartesMaison).some(carte => carte.style.display === 'block');
+          if (hasVisibleCarte) {
+              maison.querySelector('.titre-maison').style.display = 'block';
+          } else {
+              maison.querySelector('.titre-maison').style.display = 'none';
+          }
+      });
+
+      resetButton.style.display = 'block';
+  });
+
+  resetButton.addEventListener('click', function() {
+      const cartes = cartesContainer.getElementsByClassName('cartes');
+      const maisons = cartesContainer.getElementsByClassName('maison');
+
+      Array.from(cartes).forEach(function(carte) {
+          carte.style.display = 'block';
+      });
+
+      Array.from(maisons).forEach(function(maison) {
+          maison.querySelector('.titre-maison').style.display = 'block';
+      });
+
+      resetButton.style.display = 'none';
+  });
+});

@@ -5,27 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cartes Gryffondor</title>
     <link rel="stylesheet" href="css/design_cartes.css" />
+  
   </head>
 
   <body>
-    <header>
-      <nav class="navigation">
-        <div id="left-nav">
-          <img id="nav-logo" href="page1.html" alt="#" src="img/logo.webp" />
-          <div class="liens">
-            <ul>
-              <li><a href="#"><h3 class="couleur_texte_entete">Mes Cartes</h3></a></li>
-              <li><a href="#"><h3 class="couleur_texte_entete">Echanges</h3></a></li>
-              <li><a href="page2.html"><h3 class="couleur_texte_entete">Booster</h3></a></li>
-              <li><a href="#"><h3 class="couleur_texte_entete">Mon Compte</h3></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="barre"><hr /></div>
-    </header>
-    <body>
+    <div class="container">
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn">&larr;</button>
+        <h2 id="Menu">Options</h2>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="booster.html">Bootser</a></li>
+            <li><a href="trade.html">Échanges</a></li>
+            <li><a href="deco.html">Déconnexion</a></li>
+        </ul>
+    </div>
+    <script src="js/sidebar.js"></script>
+   
+  
+
       <center><h2 class="text">CARTES DISPONIBLES</h2></center>
+
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Rechercher une carte par nom...">
+        <button id="searchButton">Rechercher</button>
+      </div>
+      <button id="placement-reset-button" style="display:none;">Réinitialiser</button>
+  <script src="js/search.js"></script>
 
 
       <div class="filtres">
@@ -45,10 +53,10 @@
 
     
     <div class="alignement-cartes" id="cartes-container"></div>
-    <script src="js/favoris.js"></script>
+    
 
     <center><button id="resetButton" style="display:none;"><a href="design_cartes.html">Voir toutes les maisons</a></button></center>
-
+  </div>
     <footer class="footer">
       <div class="footer-container">
           <div class="footer-logo-slogan">
@@ -92,7 +100,7 @@
           </div>
       </div>
   </footer>
-
+   
     <script src="js/cartesgd.js"></script>
         <script src="js/obligationConnexion.js"></script>
 
