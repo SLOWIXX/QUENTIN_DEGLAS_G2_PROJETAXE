@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  width: 90%;
+  width:  80%;
+  height: 75%;
   max-width: 1400px;
   background-color: white;
   padding: 60px;
@@ -49,5 +50,11 @@ body {
 
 .details-container li {
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.aligmement-caracteristiques {
+  display: flex;
+  justify-content: space-between;
 }
