@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/connxion.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -15,7 +15,7 @@
     />
   </head>
 
-  <body>
+  <body id="register-body">
     <div id="intro" class="intro">
       <h1>Bienvenue</h1>
     </div>
@@ -25,7 +25,7 @@
         <img src="img/fond-connexion.png" alt="Vidéo de fond" class="background-video" />
       </div>
     </header>
-    <div class="positionLogin">
+    <div class="positionLogin">         
       <div class="login">
         <div class="toggleForm">
           <button class="boutonRegister" id="showRegisterForm">
@@ -37,17 +37,17 @@
         <form id="registerForm">
           <div class="formInput">
             <label for="usernameRegister">Username</label>
-            <input id="usernameRegister" type="text" />
+            <input id="usernameRegister" class="input-register" type="text" />
             <div id="usernameMessage"></div>
           </div>
           <div class="formInput">
             <label for="mailRegister">E-mail</label>
-            <input id="mailRegister" type="text" />
+            <input id="mailRegister" class="input-register" type="text" />
             <div id="emailMessage"></div>
           </div>
           <div class="formInput password-container">
             <label for="passwordRegister">Password</label>
-            <input id="passwordRegister" type="password" />
+            <input id="passwordRegister" class="input-register" type="password" />
             <button
               type="button"
               id="togglePasswordRegister"
@@ -65,12 +65,12 @@
         <form id="loginForm" style="display: none">
           <div class="formInput">
             <label for="mailLogin">E-mail</label>
-            <input id="mailLogin" type="text" />
+            <input id="mailLogin" class="input-register" type="text" />
             <div id="emailMessageLogin"></div>
           </div>
           <div class="formInput password-container">
             <label for="passwordLogin">Password</label>
-            <input id="passwordLogin" type="password" />
+            <input id="passwordLogin" class="input-register" type="password" />
             <button
               type="button"
               id="togglePasswordLogin"

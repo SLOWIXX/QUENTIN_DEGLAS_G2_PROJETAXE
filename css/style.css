@@ -6,6 +6,13 @@ body {
   height: 100vh;
 }
 
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 ul {
   list-style: none;
   padding: 0;
@@ -390,11 +397,6 @@ transition: border-color 0.3s, background-color 0.9s;
 background-color: #eedbdb;
 }
 
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
 .footer {
   background-color: #1a1a1a;
@@ -581,3 +583,447 @@ h2 {
   margin-left: 63%;
   margin-top: -3.75rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* connexion */
+
+#register-body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* ///////////////////////////////designcartes.html///////////////////////////// */
+
+
+
+/* .text {     deja pris 
+  margin-top: 5rem;
+} */
+
+/* //////////////////////carte///////////////////// */
+
+#carte-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000d2;
+}
+
+/* //////////////////////profil////////////////// */
+
+#profil-body {
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+#intro {
+  position: fixed; /* Reste fixe par rapport à la fenêtre */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Prendre toute la largeur de la fenêtre */
+  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
+  background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Assurez-vous que l'intro est au-dessus des autres éléments */
+  color: white;
+  font-family: "Poppins", sans-serif; /* Utiliser la police Poppins */
+  font-size: 7rem; /* Augmenter la taille de la police */
+  font-weight: 10000; /* Mettre le texte en gras */
+  letter-spacing: 30px; /* Espacement des lettres pour plus d'impact */
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+#intro h1 {
+  text-align: center;
+  opacity: 1;
+}
+
+.login {
+  display: none; /* Cache le formulaire dès le début */
+  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  background: url("zzz");
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  display: block;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: brightness(40%);
+  flex-direction: column;
+  display: flex;
+  gap: 5px;
+}
+
+label {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.input-register {
+  background: rgba(255, 255, 255, 0.3);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;                                                    
+  padding: 0px 20px;
+  border: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  font-size: 14px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#registerForm {
+  display: block;
+}
+
+#registerForm button {
+  background: rgb(45, 136, 231);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+#submitRegisterForm,
+#submitLoginForm {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: rgb(45, 136, 231);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitRegisterForm:hover,
+#submitLoginForm:hover {
+  background-color: #3c6bb1;
+}
+
+#passwordRegister {
+  width: calc(100% - 40px);
+  padding-right: 40px;
+}
+
+#loginForm {
+  display: none;
+}
+
+.positionLogin {
+  display: flex;
+  justify-content: center;
+  margin-top: 12rem;
+}
+
+#usernameMessage,
+#emailMessage,
+#passwordMessage,
+#emailMessageLogin,
+#passwordMessageLogin {
+  margin-top: 5px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#mailLogin,
+#passwordLogin {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#togglePassword {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+
+#togglePassword:hover {
+  color: #3475a0;
+}
+
+#togglePassword:focus {
+  outline: none;
+}
+
+.toggleForm {
+  backdrop-filter: brightness(40%);
+  display: flex;
+  justify-content: center;
+}
+
+.toggleForm button {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+}
+
+.toggleForm button.active {
+  background-color: #3475a0;
+  color: rgb(0, 0, 0);
+  border-color: #2587a5;
+}
+
+.toggleForm button:hover {
+  background-color: #1b5780;
+}
+
+form button:hover {
+  background-color: #3c6bb1;
+}
+
+.submitFormButton {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: rgb(45, 136, 231);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin: 10px 0;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 10px 20px;
+}
+
+.submitFormButton:hover {
+  background-color: #3c6bb1;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+  font-size: 12px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  height: 75%;
+  max-width: 1400px;
+  background-color: white;
+  padding: 60px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+.carte-nom {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.details-container {
+  flex: 2;
+}
+
+.details-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details-container li {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.aligmement-caracteristiques {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmation-dialog {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog-text {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.dialog-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 1rem;
+}
+
+#username {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+#email {
+  font-size: 16px;
+  color: #333333;
+}
+
+.profil a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.profil a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h2 {
+  margin-top: 4rem;
+}
+
