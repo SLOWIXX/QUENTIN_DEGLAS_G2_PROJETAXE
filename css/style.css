@@ -273,11 +273,11 @@ hr::after {
   background-color: #e67e22;
 }
 
-/* Style général pour le conteneur de cartes */
+
 #cartes-container {
   display: flex;
-  flex-direction: column; /* Affiche les maisons en colonne */
-  align-items: center; /* Centre les éléments horizontalement */
+  flex-direction: column; 
+  align-items: center; 
 }
 
 /* Style pour chaque maison */
@@ -1027,3 +1027,99 @@ h2 {
   margin-top: 4rem;
 }
 
+
+#boosterPage {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #1e1e1e;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.booster-container {
+  max-width: 80%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #292929;
+  border-radius: 4rem;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+#booster-btn {
+  background: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#booster-btn:hover {
+  background: #e6b800;
+}
+
+#booster-cartesContainer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.booster-carte:hover {
+  transform: scale(1.05);
+}
+
+.booster-carte img {
+  width: 225px;
+  height: 235px;
+  display: block;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+.booster-carte {
+  width: 20%;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s;
+  margin: 3%;
+  border-radius: 1.2rem;
+}
+
+
+.booster-carte .booster-nom {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.booster-carte .booster-info {
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.booster-carte .booster-favoris-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #f4d03f;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    width: 100%;
+    height: 2.3rem;
+    margin-top: 5%;
+  }
