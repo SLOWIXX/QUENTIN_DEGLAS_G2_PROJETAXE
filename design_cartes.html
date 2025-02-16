@@ -1,62 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartes Gryffondor</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
   
   </head>
 
   <body id="design_cartes-body">
     <div class="container-haut">
-    <button class="hamburger" id="hamburger">&#9776;</button>
-    <div class="sidebar" id="sidebar">
-        <button class="close-btn" id="close-btn">&larr;</button>
-        <h2 id="Menu">Options</h2>
-        <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="profil.html">Profil</a></li>
-            <li><a href="booster.html">Bootser</a></li>
-            <li><a href="trade.html">Échanges</a></li>
-            <li><a href="deco.html">Déconnexion</a></li>
-        </ul>
+
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <div class="sidebar" id="sidebar">
+          <button class="close-btn" id="close-btn">&larr;</button>
+          <h2 id="Menu">Options</h2>
+          <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="profil.html">Profil</a></li>
+              <li><a href="booster.html">Bootser</a></li>
+              <li><a href="trade.html">Échanges</a></li>
+              <li><a href="deco.html">Déconnexion</a></li>
+          </ul>
+      </div>
+
+      <header>
+        <div class="site-title">
+          <h2 class="text">CARTES DISPONIBLES</h2>
+        </div>
+
+        <div class="search-container">
+          <input type="text" id="searchInput" placeholder="Rechercher une carte par nom...">
+          <button id="searchButton">Rechercher</button>
+        </div>
+
+        <button id="placement-reset-button" style="display:none;">Réinitialiser</button>
+
+        <div class="filtres">
+          <label for="maison-select">Maison</label>
+          <select id="maison-select">
+            <option value="">--Choisir une maison--</option>
+            <option value="gryffondor">Gryffondor</option>
+            <option value="serpentard">Serpentard</option>
+            <option value="poufsouffle">Poufsouffle</option>
+            <option value="serdaigle">Serdaigle</option>
+            <option value="professeurs">Professeurs</option>
+            <option value="mangemort">Mangemort</option>
+            <option value="alliés">Alliés</option>
+          </select>
+        </div>
+        
+      </header>
+      
+      <div class="alignement-cartes" id="cartes-container"></div>
+      <button style="display:none;" onclick="window.location.href='design_cartes.html';">
+        Voir toutes les maisons
+    </button>
+    
     </div>
-    <script src="js/sidebar.js"></script>
-   
-  
-
-      <center><h2 class="text">CARTES DISPONIBLES</h2></center>
-
-      <div class="search-container">
-        <input type="text-search" id="searchInput" placeholder="Rechercher une carte par nom...">
-        <button id="searchButton">Rechercher</button>
-      </div>
-      <button id="placement-reset-button" style="display:none;">Réinitialiser</button>
-  <script src="js/search.js"></script>
 
 
-      <div class="filtres">
-        <label for="maison-select">Maison</label>
-        <select id="maison-select">
-          <option value="">--Choisir une maison--</option>
-          <option value="gryffondor">Gryffondor</option>
-          <option value="serpentard">Serpentard</option>
-          <option value="poufsouffle">Poufsouffle</option>
-          <option value="serdaigle">Serdaigle</option>
-          <option value="professeurs">Professeurs</option>
-          <option value="mangemort">Mangemort</option>
-          <option value="alliés">Alliés</option>
-        </select>
-        <script src="js/defilement.js"></script>
-      </div>
-
-    
-    <div class="alignement-cartes" id="cartes-container"></div>
-    
-
-    <center><button id="resetButton" style="display:none;"><a href="design_cartes.html">Voir toutes les maisons</a></button></center>
-  </div>
     <footer class="footer">
       <div class="footer-container">
           <div class="footer-logo-slogan">
@@ -85,7 +88,6 @@
               <a href="https://github.com/SLOWIXX" class="social-link">
                   <img src="img/github.png" alt="github" class="social-icon">
               </a>
-            </a>
             <a href="https://discord.gg/CaGXXD7tpV" class="social-link">
                 <img src="img/discord.png" alt="Discord" class="social-icon">
             </a>
@@ -99,15 +101,15 @@
               <a href="#" class="legal-link">Politique de confidentialité</a>
           </div>
       </div>
-  </footer>
-   
+    </footer>
+    
+    <script src="js/sidebar.js"></script>
+    <script src="js/defilement.js"></script> 
     <script src="js/cartesgd.js"></script>
-        <script src="js/obligationConnexion.js"></script>
+    <script src="js/obligationConnexion.js"></script>
+    <script>
+      checkLogin();
+    </script>
 
-                <script>
-                  checkLogin();
-                </script>
-                <script src="defilement.js"></script>
   </body>
 </html>
-

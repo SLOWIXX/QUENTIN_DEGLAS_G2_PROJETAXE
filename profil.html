@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+  </head>
 
-<body id="profil-body">
-    <div class="profil">
-        <h2 class="h2-profil">Profil de l'utilisateur</h2>
-        <p>Connecté en tant que<span id="username"></span></p>
-        <p>Email: <span id="email"></span></p>
-        <a href="#">Mot de passe oublié ?</a>
+  <body>
+    <nav></nav>
+    <h1 class="titre-profil">Profil utilisateur</h1>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" id="close-btn">&larr;</button>
+      <h2 id="Menu">Options</h2>
+      <ul>
+        <li><a href="design_cartes.html">Accueil</a></li>
+        <li><a href="#">Profil</a></li>
+        <li><a href="booster.html">Bootser</a></li>
+        <li><a href="trade.html">Échanges</a></li>
+        <li><a href="deco.html">Déconnexion</a></li>
+      </ul>
+    </div>
+
+    <div class="container-profil-info">
+      <div class="info-profil">
+        <p class="titre-info-pseudo">
+          Pseudo : <span id="username-profil"></span>
+        </p>
+        <p class="titre-info-pseudo">Email: <span id="email-profil"></span></p>
+      </div>
     </div>
     
-        
-    <script src="js/profil.js"></script>
+
+    <div class="placement-cartes-unlocked-profil">
+      <h2 class="text">Vos Cartes</h2>
+    </div>
+
+    <div class="placement-cartes-fav-profil">
+      <h2 class="titre-maison">FAVORIS</h2>
+      <div class="cartes-container" id="cartes-favoris-container"></div>
+    </div>
+
+    <div class="placement-cartes-fav-profil">
+      <h2 class="titre-maison">DÉBLOQUÉES</h2>
+      <div class="cartes-container" id="cartes-debloquees-container"></div>
+    </div>
+
+    <script src="js/cartesgd.js"></script>
+    <script src="js/profil.js" type="module"></script>
     <script src="js/obligationConnexion.js"></script>
-
-  <p>eff</p>
-</body>
-
+    <script src="js/sidebar.js"></script>
+  </body>
 </html>

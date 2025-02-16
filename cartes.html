@@ -8,10 +8,11 @@
 </head>
 <body id="carte-body">
   <div class="container">
-    <h1 id="carte-nom" class="carte-nom"></h1>
+    <h1 id="carte-nom" class="carte-nom" aria-live="polite">Chargement...</h1>
     <div class="content">
       <div class="image-container">
-        <img id="carte-image" alt="Image de la carte">
+        <img id="carte-image" alt="Image de la carte" src="data:image/gif;base64,R0lGODlhAQABAIAAAAUEBA==">
+
       </div>
       <div class="details-container">
         <ul>
@@ -20,14 +21,15 @@
           <li id="carte-rarete"></li>    
           <li id="carte-description"></li> 
           <li><h4>Caractéristiques : /100</h4></li>   
-          <div class="aligmement-caracteristiques">
-          <li id="carte-caracteristiques-force"></li> 
-          <li id="carte-caracteristiques-intelligence"></li> 
-          <li id="carte-caracteristiques-charisme"></li> 
-          <li id="carte-caracteristiques-magie"></li> 
-        </div>
-        <li id="carte-backgroundStory"></li>  
-
+          </ul>
+          <ul class="aligmement-caracteristiques">
+            <li id="carte-caracteristiques-force"></li>
+            <li id="carte-caracteristiques-intelligence"></li>
+            <li id="carte-caracteristiques-charisme"></li>
+            <li id="carte-caracteristiques-magie"></li>
+        </ul>
+        <ul>
+        <li id="carte-backgroundStory"></li> 
         </ul>
       </div>
     </div>

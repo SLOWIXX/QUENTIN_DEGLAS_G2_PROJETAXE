@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function validateInput(input, condition, validMessage, invalidMessage, messageElement) {
-    if (condition(input.value.trim())) {   // trim = enlever les espaces debut et fin
+    if (condition(input.value.trim())) {   
         messageElement.textContent = validMessage;
         messageElement.className = "valid";
         return true;

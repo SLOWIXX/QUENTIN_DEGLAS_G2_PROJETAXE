@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #000000d2;
+  background-color: #2C2F33 ;
   margin: 0;
   padding: 20px;
   height: 100vh;
@@ -40,7 +43,7 @@ ul {
 }
 
 .couleur_texte_entete {
-  color: #ffffff;
+  color: #E4E6EB;
   white-space: nowrap;
   text-align: center;
 }
@@ -88,7 +91,7 @@ ul {
 }
 
 .info li {
-  font-size: 1.rem;
+  font-size: 1rem;
   color: #866666;
   margin-bottom: 5px;
   font-weight: bold;
@@ -280,61 +283,82 @@ hr::after {
   align-items: center; 
 }
 
-/* Style pour chaque maison */
 .maison {
-  width: 100%; /* Prend toute la largeur disponible */
-  margin-bottom: 5rem; /* Espacement entre les maisons */
-  text-align: center; /* Centre le titre de la maison */
+  width: 100%; 
+  margin-bottom: 5rem; 
+  text-align: center; 
 }
 
-/* Style pour le titre de la maison */
-.titre-maison {
-  color: #000000;
-  font-weight: 900;
 
+.maison {
+  margin: 20px auto;
+  background-color: #1F2125;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1500px;
+}
+
+.titre-maison {
+  font-size: 1.8rem;
+  color: #E4E6EB;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .cartes-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 15px;
   justify-content: center;
 }
 
 .cartes {
-  width: 200px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #25282C;
+  border-radius: 12px;
+  padding: 15px;
+  width: 260px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.titre-maison {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 15px;
+.cartes:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-
-
-.text {
-  font-size: 3rem;
-  color: #000000;
-  margin-bottom: 5rem;
-  margin-top: 0rem;
-}
-
-
-.cartes img {
+.image {
   width: 100%;
-  height: 60%;
-  border-radius: 0.8rem;
+  height: auto;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.nom {
+  font-size: 1.4rem;
+  color: #E4E6EB;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #B0B3B8;
 }
 
 
-.cartes {
-  transition: opacity 0.3s ease, transform 0.3s ease;
+
+.favoris-button:hover {
+  transform: scale(1.2);
+  color: red;
 }
+
 
 .cartes[style*="display: none"] {
   opacity: 0;
@@ -377,7 +401,8 @@ a {
   margin-bottom: 20px;
   font-family: 'Arial', sans-serif;
   font-size: 1.3rem;
-  margin: 20, 0, 0, 0;
+  margin-top: 20px;
+
 }
 
 .filtres label {
@@ -397,6 +422,7 @@ transition: border-color 0.3s, background-color 0.9s;
 background-color: #eedbdb;
 }
 
+/* Footer */
 
 .footer {
   background-color: #1a1a1a;
@@ -408,49 +434,101 @@ background-color: #eedbdb;
   box-sizing: border-box; 
 }
 
-.footer-logo {
-  width: 100px;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
+
+.footer-logo {
+  width: 80px;
+}
+
 .footer-slogan {
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
 }
+
 .footer-navigation {
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
+
 .footer-link {
   color: #f5deb3;
-  margin: 0 15px;
   text-decoration: none;
+  font-size: 16px;
 }
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 .footer-quote {
-  margin: 20px auto;
+  max-width: 600px;
+  margin: 0 auto;
   font-style: italic;
   color: #d4af37;
+  font-size: 14px;
 }
+
 .footer-social {
-  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
-.social-link {
-  margin: 0 10px;
-}
+
 .social-icon {
-  width: 30px;
+  width: 25px;
+  transition: transform 0.3s ease;
 }
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 .footer-legal {
   font-size: 14px;
   color: #a9a9a9;
-  margin-top: 20px;
 }
+
 .legal-link {
   color: #a9a9a9;
   text-decoration: none;
 }
 
+.legal-link:hover {
+  text-decoration: underline;
+}
 
+@media (max-width: 600px) {
+  .footer-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-link {
+    display: block;
+  }
+
+  .footer-quote {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .social-icon {
+    width: 20px;
+  }
+}
 
  /* sidebar */
-
 .hamburger {
   font-size: 30px;
   background: none;
@@ -464,7 +542,7 @@ background-color: #eedbdb;
 }
 
 .sidebar {
-  width: 250px;
+  width: 25%;
   height: 100vh;
   background-color: #333;
   color: #fff;
@@ -532,13 +610,9 @@ h2 {
 
 .text {
   margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
-
-
-/* barre de recherche */
-
-
-
 
 .search-container {
   display: flex;
@@ -580,40 +654,14 @@ h2 {
   border-radius: 5px; 
   transition: background-color 0.3s ease, transform 0.2s ease;
   text-decoration: none;
-  margin-left: 63%;
-  margin-top: -3.75rem;
+  margin-left: 45%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* connexion */
 
 #register-body {
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
-/* ///////////////////////////////designcartes.html///////////////////////////// */
-
-
-
-/* .text {     deja pris 
-  margin-top: 5rem;
-} */
-
-/* //////////////////////carte///////////////////// */
 
 #carte-body {
   font-family: Arial, sans-serif;
@@ -626,8 +674,6 @@ h2 {
   background-color: #000000d2;
 }
 
-/* //////////////////////profil////////////////// */
-
 #profil-body {
   background-color: #f5f5f5;
   font-family: "Roboto", sans-serif;
@@ -639,24 +685,24 @@ h2 {
   height: 100vh;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
 
 #intro {
-  position: fixed; /* Reste fixe par rapport à la fenêtre */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100vw; /* Prendre toute la largeur de la fenêtre */
-  height: 100vh; /* Prendre toute la hauteur de la fenêtre */
-  background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+  width: 100vw; 
+  height: 100vh; 
+  background-color: rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Assurez-vous que l'intro est au-dessus des autres éléments */
+  z-index: 9999; 
   color: white;
-  font-family: "Poppins", sans-serif; /* Utiliser la police Poppins */
-  font-size: 7rem; /* Augmenter la taille de la police */
-  font-weight: 10000; /* Mettre le texte en gras */
-  letter-spacing: 30px; /* Espacement des lettres pour plus d'impact */
+  font-family: "Poppins", sans-serif; 
+  font-size: 7rem; 
+  font-weight: 900; 
+  letter-spacing: 30px; 
   opacity: 1;
   transition: opacity 1s ease-out;
 }
@@ -667,14 +713,13 @@ h2 {
 }
 
 .login {
-  display: none; /* Cache le formulaire dès le début */
-  border: 1px solid black;
+  display: none; 
+
   width: 400px;
   height: 500px;
   background: url("zzz");
   color: white;
   border-radius: 20px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
   background-size: cover;
   background-position: center;
 }
@@ -732,6 +777,8 @@ form label {
 
 #registerForm {
   display: block;
+  height: 105%;
+  border-radius: 15px;
 }
 
 #registerForm button {
@@ -745,22 +792,7 @@ form label {
   color: white;
 }
 
-#submitRegisterForm,
-#submitLoginForm {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: white;
-  background: rgb(45, 136, 231);
-  height: 40px;
-  line-height: 40px;
-  border-radius: 20px;
-  border: none;
-  margin: 10px 0;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 
 #submitRegisterForm:hover,
 #submitLoginForm:hover {
@@ -897,27 +929,96 @@ form button:hover {
 }
 
 .container {
-  width: 80%;
+  width: 90%;
   height: 75%;
   max-width: 1400px;
   background-color: white;
   padding: 60px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 
+@media (max-width: 768px) {
+  #intro {
+    font-size: 3rem;
+    letter-spacing: 10px;
+    padding: 20px;
+  }
 
+  .login {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .positionLogin {
+    margin-top: 6rem;
+  }
+
+  .input-register {
+    font-size: 12px;
+  }
+
+  #registerForm button {
+    width: 100%;
+  }
+
+  #togglePassword {
+    font-size: 16px;
+  }
+
+  .toggleForm button {
+    width: 100%;
+  }
+
+  .background-video {
+    height: auto;
+    min-height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #intro {
+    font-size: 2rem;
+    letter-spacing: 5px;
+  }
+
+  .login {
+    width: 100%;
+    height: auto;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  .positionLogin {
+    margin-top: 5rem;
+  }
+
+  .input-register {
+    font-size: 10px;
+  }
+}
 
 
 
 .carte-nom {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .image-container {
@@ -944,6 +1045,37 @@ form button:hover {
   margin-bottom: 20px;
   font-size: 1.2rem;
 }
+
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carte-nom {
+    font-size: 2rem;
+  }
+
+  .details-container li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carte-nom {
+    font-size: 1.8rem;
+  }
+
+  .details-container li {
+    font-size: 0.85rem;
+  }
+
+  .image-container img {
+    max-width: 200px;
+  }
+}
+
 
 .aligmement-caracteristiques {
   display: flex;
@@ -1123,3 +1255,149 @@ h2 {
     height: 2.3rem;
     margin-top: 5%;
   }
+
+  @media (max-width: 768px) {
+    .booster-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    #booster-btn {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    #booster-cartesContainer {
+      margin-top: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+  
+    .booster-carte {
+      width: 45%; 
+      margin: 2%;
+    }
+  
+    .booster-carte .booster-nom {
+      font-size: 14px; 
+    }
+  
+    .booster-carte .booster-info {
+      font-size: 11px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .booster-container {
+      max-width: 95%;
+      padding: 10px;
+    }
+  
+    #booster-btn {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    #booster-cartesContainer {
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .booster-carte {
+      width: 80%; 
+      margin: 5% 0;
+    }
+  
+    .booster-carte .booster-nom {
+      font-size: 12px; 
+    }
+  
+    .booster-carte .booster-info {
+      font-size: 10px;
+    }
+  }
+
+  .image-maison-led {
+    width: 30%;
+    margin-top: -29%;
+    margin-left: 75%;
+    opacity: 0; 
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartes:hover .image-maison-led {
+    opacity: 1; 
+}
+
+#cartes-container10 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;  
+  width:75%; 
+  margin-left: 12.5%;
+}
+
+.titre-profil {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-profil {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-profil-info {
+  margin-top: 20px;
+  background-color: rgb(107, 97, 95);
+  width: 90%;  
+  max-width: 600px; 
+  border-radius: 10px;
+  padding: 15px;
+  margin-left: auto;  
+  margin-right: auto; 
+  height: auto;
+  box-sizing: border-box;
+}
+
+#username-profil,
+#email-profil {
+  font-size: 1.4rem;
+  color: rgb(228, 221, 221);
+}
+
+@media (max-width: 768px) {
+  .container-profil-info {
+    width: 95%;  
+    padding: 12px;
+  }
+
+  #username-profil,
+  #email-profil {
+    font-size: 1.2rem; 
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .container-profil-info {
+    width: 100%;  
+    padding: 10px;
+  }
+
+  #username-profil,
+  #email-profil {
+    font-size: 1rem;  
+  }
+
+
+}

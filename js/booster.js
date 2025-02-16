@@ -9,12 +9,9 @@ function peutOuvrirBooster() {
     }
     const maintenant = new Date().getTime();
     const difference = maintenant - parseInt(derniereOuverture, 10);
-    const heures24 = 24 * 60 * 60 * 1000; 
+    const heures24 = 24 * 60 * 60 * 1000;
     return difference >= heures24;
 }
-
-
-
 
 function enregistrerOuverture() {
     localStorage.setItem("derniereOuverture", new Date().getTime());
@@ -23,29 +20,27 @@ function enregistrerOuverture() {
 
 function tirerCartes() {
     let cartesTirees = [];
-    let cartesIndicesTirees = new Set(); 
+    let cartesIndicesTirees = new Set();
 
     let currentUser = JSON.parse(localStorage.getItem("currentUser")) || {};
     let cartesDebloquees = currentUser.cartes || [];
 
     while (cartesTirees.length < 5) {
-        let carte = tirerCarteAleatoire(cartesDebloquees); 
-        
-        if (!cartesIndicesTirees.has(carte.id)) {
+        let carte = tirerCarteAleatoire(cartesDebloquees);
+        if (carte && !cartesIndicesTirees.has(carte.id)) {
             cartesIndicesTirees.add(carte.id);
             cartesTirees.push(carte);
         }
     }
-
+    console.log("Cartes tirées :", cartesTirees);
     return cartesTirees;
 }
 
-
 function tirerCarteAleatoire(cartesDebloquees) {
     let cartesFiltrees = cartesData.filter(carte => !cartesDebloquees.includes(carte.id));
+    if (cartesFiltrees.length === 0) return null;
     return cartesFiltrees[Math.floor(Math.random() * cartesFiltrees.length)];
 }
-
 
 function ajouterCartesALaCollection(cartesTirees) {
     let currentUser = JSON.parse(localStorage.getItem("currentUser")) || {};
@@ -55,8 +50,6 @@ function ajouterCartesALaCollection(cartesTirees) {
     }
 
     let userEmail = currentUser.email;
-    let cartesId = cartesTirees.map(c => c.id);
-
     let users = JSON.parse(localStorage.getItem("users")) || [];
     let user = users.find(u => u.email === userEmail);
 
@@ -65,14 +58,17 @@ function ajouterCartesALaCollection(cartesTirees) {
         return;
     }
 
-    user.cartes = user.cartes ? user.cartes.concat(cartesId) : cartesId;
+    let nouvellesCartes = cartesTirees.map(c => c.id);
+    console.log("Avant ajout, l'utilisateur", userEmail, "a :", user.cartes);
 
+    user.cartes = [...new Set([...(user.cartes || []), ...nouvellesCartes])];
     currentUser.cartes = user.cartes;
+    
     localStorage.setItem("currentUser", JSON.stringify(currentUser));
     localStorage.setItem("users", JSON.stringify(users));
+
+    console.log("Après ajout, l'utilisateur", userEmail, "a :", user.cartes);
 }
-
-
 
 function afficherCartes(cartesTirees) {
     boosterCartesContainer.innerHTML = "";
@@ -88,7 +84,7 @@ function afficherCartes(cartesTirees) {
                 <ul class="info">
                     <li>Acteur : ${carte.acteur}</li>
                     <li>Maison : ${carte.maison}</li>
-                    <li>Rareté : ${carte.rarete}</li> <!-- Rareté affichée ici -->
+                    <li>Rareté : ${carte.rarete}</li>
                 </ul>
                 <div class="favoris">
                     <button class="booster-favoris-button" title="Ajouter aux favoris">❤️</button>
@@ -99,13 +95,12 @@ function afficherCartes(cartesTirees) {
     });
 }
 
-
 boosterBouton.addEventListener("click", function () {
     if (peutOuvrirBooster()) {
-        let cartesGagnees = tirerCartes(); 
-        ajouterCartesALaCollection(cartesGagnees); 
-        enregistrerOuverture(); 
-        afficherCartes(cartesGagnees); 
+        let cartesGagnees = tirerCartes();
+        ajouterCartesALaCollection(cartesGagnees);
+        enregistrerOuverture();
+        afficherCartes(cartesGagnees);
     } else {
         boosterStatus.innerText = "Vous devez attendre 24h avant d'ouvrir un autre booster.";
     }

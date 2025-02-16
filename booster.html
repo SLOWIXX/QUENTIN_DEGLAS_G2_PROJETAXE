@@ -8,6 +8,18 @@
 </head>
 <body id="boosterPage">
 
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn">&larr;</button>
+        <h2 id="Menu">Options</h2>
+        <ul>
+            <li><a href="design_cartes.html">Accueil</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="booster.html">Bootser</a></li>
+            <li><a href="trade.html">Échanges</a></li>
+            <li><a href="deco.html">Déconnexion</a></li>
+        </ul>
+    </div>
     <div class="booster-container">
         <h1>Déballer un Booster</h1>
         <p id="booster-status"></p>
@@ -15,10 +27,11 @@
         <div class="alignement-cartes" id="booster-cartesContainer"></div>
     </div>
 
+    <script src="js/sidebar.js"></script>
     <script src="js/cartesgd.js"></script>
     <script src="js/booster.js"></script>
+
 
 </body>
 </html>
 
-<div class="alignement-cartes" id="cartes-container"></div>

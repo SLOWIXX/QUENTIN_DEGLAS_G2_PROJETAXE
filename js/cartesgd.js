@@ -6,6 +6,7 @@ const cartesData = [
     rarete: "Légendaire",
     maison: "Gryffondor",
     image: "img/perso/1.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "Le survivant de l'attaque de Voldemort, Harry est un jeune sorcier destiné à vaincre le Mage Noir.",
     caracteristiques: {
@@ -24,6 +25,7 @@ const cartesData = [
     rarete: "Très Rare",
     maison: "Gryffondor",
     image: "img/perso/2.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "L'une des sorcières les plus brillantes de sa génération, Hermione est une grande amie de Harry et Ron.",
       "caracteristiques": {
@@ -41,6 +43,7 @@ const cartesData = [
     rarete: "Très Rare",
     maison: "Gryffondor",
     image: "img/perso/3.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "Le fidèle ami de Harry, Ron est connu pour son courage malgré ses nombreuses peurs et ses mésaventures.",
       caracteristiques: {
@@ -59,6 +62,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Gryffondor",
     image: "img/perso/4.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "Un élève souvent sous-estimé, Neville prouve sa bravoure et son courage à plusieurs reprises.",
       caracteristiques: {
@@ -76,6 +80,7 @@ const cartesData = [
     rarete: "Très Rare",
     maison: "Gryffondor",
     image: "img/perso/5.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "La plus jeune des Weasley, Ginny est une sorcière talentueuse et une figure forte dans la résistance.",
       caracteristiques: {
@@ -93,6 +98,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Gryffondor",
     image: "img/perso/6.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "L'un des jumeaux Weasley, Fred est connu pour son humour et sa bravoure dans la lutte contre le mal.",
       caracteristiques: {
@@ -110,6 +116,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Gryffondor",
     image: "img/perso/7.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "Le frère jumeau de Fred, George partage son esprit d'entreprise et son courage dans les moments difficiles.",
       caracteristiques: {
@@ -127,6 +134,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Gryffondor",
     image: "img/perso/8.png",
+    imagemaison: "img/maison/gryffondor.png",
     description:
       "Un jeune sorcier talentueux, bien qu'un peu maladroit, qui se distingue par son habileté en sortilèges.",
       caracteristiques: {
@@ -144,6 +152,7 @@ const cartesData = [
     rarete: "Légendaire",
     maison: "Serpentard",
     image: "img/perso/9.png",
+    imagemaison: "img/maison/serpentard.png",
     description:
       "Fils de Lucius Malfoy, Draco est l'ennemi juré de Harry et un fervent partisan des idéaux de sa famille.",
       caracteristiques: {
@@ -161,6 +170,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Serpentard",
     image: "img/perso/10.png",
+    imagemaison: "img/maison/serpentard.png",
     description: "Une élève vaniteuse et snob, souvent alliée à Draco Malfoy, elle méprise les élèves des autres maisons.",
     caracteristiques: {
       force: 60,
@@ -177,6 +187,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Serpentard",
     image: "img/perso/11.png",
+    imagemaison: "img/maison/serpentard.png",
     description:
       "Un élève taciturne et mystérieux, Blaise est connu pour sa beauté et sa loyauté envers les Malfoy.",
       caracteristiques: {
@@ -194,6 +205,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Serpentard",
     image: "img/perso/12.png",
+    imagemaison: "img/maison/serpentard.png",
     description:
       "Un acolyte de Draco Malfoy, Goyle est souvent vu aux côtés de son ami et manque de finesse intellectuelle.",
     caracteristiques: {
@@ -211,6 +223,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Serpentard",
     image: "img/perso/13.png",
+    imagemaison: "img/maison/serpentard.png",
     description:
       "Comme Goyle, Crabbe est l'un des amis fidèles de Draco Malfoy, connu pour sa force physique et son manque d'intelligence.",
       caracteristiques: {
@@ -228,6 +241,7 @@ const cartesData = [
     rarete: "Légendaire",
     maison: "Poufsouffle",
     image: "img/perso/14.png",
+    imagemaison: "img/maison/poufsouffle.png",
     description:
       "Un élève courageux et loyal, Cedric est un modèle de bienveillance et un champion de la coupe de feu.",
     caracteristiques: {
@@ -245,6 +259,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Poufsouffle",
     image: "img/perso/15.png",
+    imagemaison: "img/maison/poufsouffle.png",
     description:
       "Membre de l'Ordre du Phénix, Tonks est une auror à l'esprit vif et à l'apparence changeante.",
     caracteristiques: {
@@ -262,6 +277,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Poufsouffle",
     image: "img/perso/16.png",
+    imagemaison: "img/maison/poufsouffle.png",
     description:
       "Un élève sympathique et curieux, Justin est souvent vu comme quelqu'un de réfléchi et d'aimable.",
     caracteristiques: {
@@ -279,6 +295,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Poufsouffle",
     image: "img/perso/17.png",
+    imagemaison: "img/maison/poufsouffle.png",
     description:
       "Une élève calme mais déterminée, Susan fait partie de l'Ordre du Phénix pendant la guerre contre Voldemort.",
     caracteristiques: {
@@ -296,6 +313,7 @@ const cartesData = [
     rarete: "Très Rare",
     maison: "Serdaigle",
     image: "img/perso/18.png",
+    imagemaison: "img/maison/serdaigle.png",
     description:
       "Une sorcière talentueuse et membre de l'équipe de Quidditch de Serdaigle, elle a eu une relation avec Harry.",
     caracteristiques: {
@@ -313,6 +331,7 @@ const cartesData = [
     rarete: "Très Rare",
     maison: "Serdaigle",
     image: "img/perso/19.png",
+    imagemaison: "img/maison/serdaigle.png",
     description:
       "Luna est une élève excentrique mais sage, connue pour sa loyauté et sa perspective unique.",
       caracteristiques: {
@@ -330,6 +349,7 @@ const cartesData = [
     rarete: "Rare",
     maison: "Serdaigle",
     image: "img/perso/20.png",
+    imagemaison: "img/maison/serdaigle.png",
     description: "Padma est une sorcière intelligente et la sœur jumelle de Parvati Patil.",
     caracteristiques: {
       force: 60,
@@ -346,6 +366,7 @@ const cartesData = [
     rarete: "Commune",
     maison: "Serdaigle",
     image: "img/perso/21.png",
+    imagemaison: "img/maison/serdaigle.png",
     description: "Élève brillante et calme, Lisa est respectée pour son sérieux et son travail acharné.",
     caracteristiques: {
       force: 65,
@@ -371,39 +392,6 @@ const cartesData = [
       magie: 100
     },
     backgroundStory: "Dumbledore est célèbre pour ses exploits magiques et sa lutte contre le Mage Noir Grindelwald. Il porte cependant un lourd passé personnel, marqué par la perte de sa sœur Ariana et des erreurs commises dans sa jeunesse."
-  },
-  {
-    id: 20,
-    nom: "Padma Patil",
-    acteur: "Afshan Azad",
-    rarete: "Rare",
-    maison: "Serdaigle",
-    image: "img/perso/20.png",
-    description: "Padma est une sorcière intelligente et la sœur jumelle de Parvati Patil.",
-    caracteristiques: {
-      force: 60,
-      intelligence: 90,
-      charisme: 80,
-      magie: 85
-    },
-    backgroundStory: "Padma Patil, une élève de Serdaigle, est connue pour son intelligence et sa sagesse. Bien qu'elle partage une relation proche avec sa sœur jumelle Parvati, leurs personnalités sont assez différentes. Padma est plus sérieuse et réfléchie, consacrant beaucoup de son temps aux études et à la magie avancée. Elle a toujours voulu prouver qu'elle est capable par elle-même, sans se reposer sur la popularité de sa sœur."
-  },
-  
-  {
-    id: 21,
-    nom: "Lisa Turpin",
-    acteur: "Gemma Jones",
-    rarete: "Commune",
-    maison: "Serdaigle",
-    image: "img/perso/21.png",
-    description: "Élève brillante et calme, Lisa est respectée pour son sérieux et son travail acharné.",
-    caracteristiques: {
-      force: 65,
-      intelligence: 85,
-      charisme: 75,
-      magie: 80
-    },
-    backgroundStory: "Lisa Turpin est une élève sérieuse et dévouée, souvent vue en train de réviser ou de travailler sur des projets magiques complexes. Bien qu'elle soit souvent discrète, sa compétence en magie et son sens du détail lui valent le respect de ses camarades. Elle a grandi dans une famille de sorciers, où l'accent a toujours été mis sur l'éducation et le travail acharné."
   },
   {
     id: 40,
@@ -767,6 +755,12 @@ function fetchData(data) {
 }
 
 function showHouse(maison, maisonData) {
+  console.log(maisonData);
+
+  if (!maisonData || maisonData.length === 0) {
+    return;
+  }
+
   let maisonDiv = document.createElement("div");
   maisonDiv.classList.add("maison");
 
@@ -775,12 +769,21 @@ function showHouse(maison, maisonData) {
   const maisonCartesContainer = document.createElement("div");
   maisonCartesContainer.classList.add("cartes-container");
 
+  let hasCards = false;
+
   maisonData.forEach((carte) => {
+    if (!carte.nom) {
+      return;
+    }
+
+    hasCards = true;
+
     const carteElement = document.createElement("div");
     carteElement.classList.add("cartes");
 
-
     const imageSrc = carte.image ? carte.image : "./img/FOND.avif";
+    const imagemaisonSrc = carte.imagemaison ? carte.imagemaison : "./img/FOND.avif";
+    const displayStyle = carte.imagemaison ? "block" : "none";  
     carteElement.innerHTML = `
       <img src="${imageSrc}" alt="Carte de ${carte.nom}" class="image" />
       <div class="contenu-cartes">
@@ -793,8 +796,29 @@ function showHouse(maison, maisonData) {
         <div class="favoris">
           <button class="favoris-button" title="Ajouter aux favoris">❤️</button>
         </div>
+        <img src="${imagemaisonSrc}" class="image-maison-led ${carte.imagemaison ? 'active' : ''}">
+
+
       </div>
     `;
+
+    carteElement.querySelector(".favoris-button").addEventListener("click", (event) => {
+      event.stopPropagation(); 
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      if (currentUser) {
+        if (!currentUser.favoris) {
+          currentUser.favoris = [];
+        }
+        if (!currentUser.favoris.includes(carte.id)) {
+          currentUser.favoris.push(carte.id);
+        } else {
+          currentUser.favoris = currentUser.favoris.filter(id => id !== carte.id);
+        }
+        localStorage.setItem("currentUser", JSON.stringify(currentUser));
+      } else {
+        console.log("Aucun utilisateur connecté.");
+      }
+    });
 
     carteElement.addEventListener("click", () => {
       const carteData = JSON.stringify(carte);
@@ -816,6 +840,7 @@ fetchData(cartesData);
 
 document.querySelectorAll(".titre-maison").forEach((titre) => {
   titre.addEventListener("click", () => {
+    console.log(titre);
     const maisonSelectionnee = titre.textContent.trim();
 
     document.querySelectorAll(".titre-maison").forEach((autreTitre) => {
@@ -856,63 +881,77 @@ maisonTitles.forEach((titre) => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("searchInput");
+  const resetButton = document.getElementById("placement-reset-button");
 
-
-
-// carteElement.addEventListener("click", () => {
-//   localStorage.setItem("carteSelectionnee", JSON.stringify(carte));
-//   window.location.href = "cartes.html";
-// });
-
-
-
-// barre de recherche 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const searchInput = document.getElementById('searchInput');
-  const searchButton = document.getElementById('searchButton');
-  const resetButton = document.getElementById('placement-reset-button');
-  const cartesContainer = document.getElementById('cartes-container');
-
-  searchButton.addEventListener('click', function () {
+  searchInput.addEventListener("input", function () {
     const searchTerm = searchInput.value.toLowerCase();
-    const cartes = cartesContainer.getElementsByClassName('cartes');
-    const maisons = cartesContainer.getElementsByClassName('maison');
 
-    Array.from(cartes).forEach(function (carte) {
-      const carteNom = carte.querySelector('.nom').textContent.toLowerCase();
-      if (carteNom.includes(searchTerm)) {
-        carte.style.display = 'block';
-      } else {
-        carte.style.display = 'none';
+    const filteredData = cartesData.filter((carte) =>
+      carte.nom.toLowerCase().includes(searchTerm)
+    );
+
+    const maisonsData = filteredData.reduce((acc, item) => {
+      if (!acc[item.maison]) {
+        acc[item.maison] = [];
       }
+      acc[item.maison].push(item);
+      return acc;
+    }, {});
+
+    cartesContainer.innerHTML = "";
+
+    Object.keys(maisonsData).forEach((maison) => {
+      showHouse(maison, maisonsData[maison]);
     });
 
-    Array.from(maisons).forEach(function (maison) {
-      const cartesMaison = maison.getElementsByClassName('cartes');
-      const hasVisibleCarte = Array.from(cartesMaison).some(carte => carte.style.display === 'block');
-      if (hasVisibleCarte) {
-        maison.querySelector('.titre-maison').style.display = 'block';
-      } else {
-        maison.querySelector('.titre-maison').style.display = 'none';
-      }
-    });
+    attachClickEvents();
 
-    resetButton.style.display = 'block';
+    resetButton.style.display = searchTerm ? "block" : "none";
   });
 
-  resetButton.addEventListener('click', function () {
-    const cartes = cartesContainer.getElementsByClassName('cartes');
-    const maisons = cartesContainer.getElementsByClassName('maison');
+  resetButton.addEventListener("click", function () {
+    searchInput.value = "";
 
-    Array.from(cartes).forEach(function (carte) {
-      carte.style.display = 'block';
-    });
+    cartesContainer.innerHTML = "";
+    fetchData(cartesData); 
 
-    Array.from(maisons).forEach(function (maison) {
-      maison.querySelector('.titre-maison').style.display = 'block';
-    });
-
-    resetButton.style.display = 'none';
+    attachClickEvents(); 
+    resetButton.style.display = "none";
   });
+
+  function attachClickEvents() {
+    document.querySelectorAll(".titre-maison").forEach((titre) => {
+      titre.addEventListener("click", () => {
+        const maisonSelectionnee = titre.textContent.trim();
+
+        document.querySelectorAll(".titre-maison").forEach((autreTitre) => {
+          if (autreTitre.textContent.trim() !== maisonSelectionnee) {
+            autreTitre.style.display = "none";
+          }
+        });
+
+        document.querySelectorAll(".cartes-container").forEach((container) => {
+          if (
+            container.previousElementSibling.textContent.trim() ===
+            maisonSelectionnee
+          ) {
+            container.querySelectorAll(".cartes").forEach((carte) => {
+              carte.style.display = "block";
+            });
+          } else {
+            container.querySelectorAll(".cartes").forEach((carte) => {
+              carte.style.display = "none";
+            });
+          }
+        });
+
+        resetButton.style.display = "block";
+      });
+    });
+  }
+
+  attachClickEvents();
 });
+
